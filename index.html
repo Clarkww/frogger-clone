@@ -19,33 +19,10 @@
             margin: 0 auto;
             background-color: #000;
         }
-
-        .ui {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            width: 100%;
-            overflow: hidden; /* Prevent scroll bars */
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            background-color: #000;
-            color: #fff;
-            box-sizing: border-box; /* Include padding in the element's total width */
-        }
     </style>
 </head>
 
 <body>
-    <div class="ui">
-        <p>Stage One</p>
-
-        <div class="lives">
-            <p>Lives: <span id="lives">3</span></p>
-        </div>
-    </div>
     <canvas id="canvas"></canvas>
 
     <script src="./script.js"></script>

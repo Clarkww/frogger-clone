@@ -1,4 +1,22 @@
-const canvas = document.getElementById('canvas');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+    </Style>
+</head>
+<body>
+    <!-- <img src="https://drive.google.com/file/d/1PuxFjDP1qaCmZadQMzlcdmqV4hLFBAEl/view?usp=drive_link" alt=""> -->
+    <canvas id="canvas" style="display: block; width: 100%; height: 100vh; margin: none; padding: 0; background-color: black;"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 console.log(window.innerWidth);
@@ -18,7 +36,7 @@ let redTruckImg = new Image();
 redTruckImg.src = './images/redTruck.png';
 
 let redTruckLeftImg = new Image();
-redTruckLeftImg.src = './images/redTruckLeft.png';
+redTruckLeftImg.src = 'https://raw.githubusercontent.com/Clarkww/frogger-clone/4459e7ad79cd808185111853223c4eb377713d76/redTruckLeft.png';
 
 let greenTruckImg = new Image();
 greenTruckImg.src = './images/greenTruck.png';
@@ -50,9 +68,9 @@ greenSuvImg.src = './images/greenSuv.png';
 let greenSuvLeftImg = new Image();
 greenSuvLeftImg.src = './images/greenSuvLeft.png';
 
+// let binLorryImg = new Image();
 let binLorryImg = new Image();
-binLorryImg.src = './images/binLorry.png';
-
+binLorryImg.src = './images/binLorry.png'; // Direct link
 let binLorryLeftImg = new Image();
 binLorryLeftImg.src = './images/binLorryLeft.png';
 
@@ -578,3 +596,6 @@ function startGame() {
 }
 
 document.addEventListener('keydown', startGame);
+    </script>
+</body>
+</html>
